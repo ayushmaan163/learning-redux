@@ -17,14 +17,14 @@ const Products = () => {
 
   return (
     <div>
-      {items.map((item) => {
+      {items.map((item) => (
         <div className="productCard" key={item.id}>
           <img src={item.image} />
           <h4>{item.title}</h4>
-          <h5>{item.price}</h5>
+          <h5>${item.price}</h5>
           <button className="cartBtn">Add to Cart</button>
-        </div>;
-      })}
+        </div>
+      ))}
     </div>
   );
 };
